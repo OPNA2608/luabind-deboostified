@@ -47,8 +47,8 @@ target_compile_definitions(${PROJECT_NAME}
 
 target_compile_options(${PROJECT_NAME}
 	PRIVATE
-	$<$<CXX_COMPILER_ID:MSVC>:"/MP">
-	$<$<CXX_COMPILER_ID:MSVC>:"/wd4251">
+	$<$<CXX_COMPILER_ID:MSVC>:/MP>
+	$<$<CXX_COMPILER_ID:MSVC>:/wd4251>
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
